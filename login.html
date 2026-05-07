@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groco - Login</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#2E7D32',
+                        'brand-orange': '#FE5303',
+                        'bg-light': '#FFF7F4'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-bg-light text-gray-800 antialiased overflow-x-hidden flex flex-col min-h-screen">
+
+    <header class="bg-brand-orange/15 py-4 shadow-sm sticky top-0 z-50 backdrop-blur-md">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold flex items-center gap-2 text-brand-green">
+                <i class="fa-solid fa-basket-shopping"></i> 
+                Groco
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-brand-orange transition">Home</a>
+                <a href="about.html" class="font-medium hover:text-brand-orange transition">About Us</a>
+                <a href="categories.html" class="font-medium hover:text-brand-orange transition">Categories</a>
+                <a href="contact.html" class="font-medium hover:text-brand-orange transition">Contact</a>
+            </nav>
+            <div class="flex space-x-4">
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </button>
+               <a href="login.html"><button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-user"></i>
+                </button></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-16 px-6">
+        
+        <div class="border border-gray-300 rounded-[2rem] p-8 md:p-12 w-full max-w-xl bg-bg-light shadow-sm">
+            
+            <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-10">
+                <i class="fa-solid fa-user text-4xl text-gray-600"></i>
+            </div>
+            
+            <form action="#">
+                <div class="mb-8">
+                    <label for="email" class="block text-brand-green font-semibold text-xl mb-3">Email-Id</label>
+                    <input type="email" id="email" placeholder="Enter Your Mail-id" class="w-full bg-transparent border border-gray-300 rounded-xl px-5 py-3 focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition text-gray-700">
+                </div>
+                
+                <div class="mb-10">
+                    <label for="password" class="block text-brand-green font-semibold text-xl mb-3">Password</label>
+                    <input type="password" id="password" placeholder="Enter Your Password" class="w-full bg-transparent border border-gray-300 rounded-xl px-5 py-3 focus:outline-none focus:border-brand-green focus:ring-1 focus:ring-brand-green transition text-gray-700">
+                </div>
+                
+                <div class="text-center mb-8">
+                    <button type="submit" class="bg-brand-orange text-white font-medium px-12 py-3 rounded-lg hover:bg-orange-600 transition shadow-sm">
+                        Log In
+                    </button>
+                </div>
+                
+                <div class="text-center text-gray-600 text-sm font-medium">
+                    Don't Have An Account <a href="#" class="text-[#fca5a5] hover:text-brand-orange transition ml-1">Create Now?</a>
+                </div>
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-brand-orange/15 text-gray-800 py-12 border-t border-brand-orange/20 mt-auto">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="#" class="text-2xl font-bold flex items-center gap-2 mb-4 text-brand-green">
+                    <i class="fa-solid fa-basket-shopping"></i> 
+                    Groco
+                </a>
+                <p class="text-gray-700 text-sm mb-6 leading-relaxed">Lorem ipsum Dolor, sit Amet Consectetur Adipisicing Elite Earum Aials Volupats Labore Est.Dolorum Tenetur!</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Contact Info</h3>
+                <ul class="space-y-3 text-gray-700 text-sm">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +123-9887-0987</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +123-9887-0987</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-brand-orange"></i> gayauthi@gmail.com</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-brand-orange"></i> Mumbai India-9989876</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Quick Link</h3>
+                <ul class="space-y-2 text-gray-700 text-sm">
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right-long text-brand-orange text-xs"></i> Home</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right-long text-brand-orange text-xs"></i> Features</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right-long text-brand-orange text-xs"></i> Products</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right-long text-brand-orange text-xs"></i> Categories</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right-long text-brand-orange text-xs"></i> Review</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right-long text-brand-orange text-xs"></i> Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Newsletter</h3>
+                <p class="text-gray-700 text-sm mb-4">Subscribe For Latest Updates</p>
+                <form action="#" class="flex flex-col gap-3">
+                    <input type="email" placeholder="Enter Your Email" class="px-4 py-2 bg-[#EFE6E2] border border-transparent rounded-lg text-gray-800 focus:outline-none focus:border-brand-orange transition w-full">
+                    <button type="submit" class="border border-black text-black px-6 py-1.5 rounded-lg hover:bg-brand-green hover:text-white hover:border-brand-green transition w-max text-sm font-medium">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

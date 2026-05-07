@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groco - Organic Food Store</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#2E7D32',
+                        'brand-orange': '#FE5303'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        /* Custom Ribbon Shape for Headings */
+        .ribbon {
+            clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-gray-800 antialiased overflow-x-hidden">
+
+    <header class="bg-brand-orange/15 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center gap-2 text-brand-green">
+                <i class="fa-solid fa-basket-shopping"></i> 
+                Groco
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-brand-orange transition">Home</a>
+                <a href="about.html" class="font-medium hover:text-brand-orange transition">About Us</a>
+                <a href="categories.html" class="font-medium hover:text-brand-orange transition">Categories</a>
+                <a href="contact.html" class="font-medium hover:text-brand-orange transition">Contact</a>
+            </nav>
+            <div class="flex space-x-4">
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </button>
+                <a href="login.html"><button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-user"></i>
+                </button></a>
+            </div>
+        </div>
+    </header>
+
+  <section class="relative w-full min-h-[500px] flex items-center justify-end bg-[url('./Assets/Images/home%20page1.png')] bg-cover bg-center bg-no-repeat py-20 px-6 md:px-16">
+        
+        <div class="w-full md:w-1/2 lg:w-5/12 text-center">
+            
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-green leading-tight mb-4">
+                Fresh And <span class="text-brand-orange">Organic</span> Products For You
+            </h1>
+            
+            <p class="text-gray-600 mb-8 max-w-lg mx-auto text-base md:text-lg">
+                Lorem ipsum Dolor,sit Amet Consectetur Adipisicing Elite .
+                Earum Aials Volupats Labore Est.Dolorum Tenetur!
+            </p>
+            
+            <a href="categories.html" class="inline-block border border-black text-black font-medium text-lg px-8 py-3 rounded-md hover:bg-black hover:text-white transition">
+                Shop Now
+            </a>
+            
+        </div>
+
+    </section>
+
+    <section class="py-16 bg-dark-bg text-center">
+        <h2 class="text-3xl font-bold text-brand-green mb-10">
+            Our <span class="bg-brand-orange text-white px-8 py-2 inline-block ribbon ml-2">Features</span>
+        </h2>
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200">
+                
+                <img src="./Assets/Images/our f1.png" alt="">
+                <h3 class="text-xl font-bold mb-2">Fresh And Organic</h3>
+                <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/our f2.png" alt="">
+                <h3 class="text-xl font-bold mb-2">Free Delivery</h3>
+                <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/our f.3.png" alt="">
+                <h3 class="text-xl font-bold mb-2">Easy Payment</h3>
+                <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-dark-bg text-center">
+        <h2 class="text-3xl font-bold text-brand-green mb-10">
+            Our <span class="bg-brand-orange text-white px-8 py-2 inline-block ribbon ml-2">Products</span>
+        </h2>
+        <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our p1.png" alt="Fresh Onion" class="w-32 h-32 object-cover rounded-full mb-4">
+                <h3 class="text-lg font-bold">Fresh Onion</h3>
+                <p class="text-brand-green font-bold my-2">$4.99 <span class="text-gray-400 line-through text-sm">$10.99</span></p>
+                <div class="text-brand-orange text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition w-full">Add To Cart</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our p2.png" alt="Fresh Orange" class="w-32 h-32 object-cover rounded-full mb-4">
+                <h3 class="text-lg font-bold">Fresh Orange</h3>
+                <p class="text-brand-green font-bold my-2">$4.99 <span class="text-gray-400 line-through text-sm">$10.99</span></p>
+                <div class="text-brand-orange text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition w-full">Add To Cart</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our p3.png" alt="Fresh Carrot" class="w-32 h-32 object-cover rounded-full mb-4">
+                <h3 class="text-lg font-bold">Fresh Carrot</h3>
+                <p class="text-brand-green font-bold my-2">$4.99 <span class="text-gray-400 line-through text-sm">$10.99</span></p>
+                <div class="text-brand-orange text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition w-full">Add To Cart</button>
+            </div>
+             <div class="bg-white p-6 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our p4.png" alt="Fresh Apple" class="w-32 h-32 object-cover rounded-full mb-4">
+                <h3 class="text-lg font-bold">Fresh Green Apple</h3>
+                <p class="text-brand-green font-bold my-2">$4.99 <span class="text-gray-400 line-through text-sm">$10.99</span></p>
+                <div class="text-brand-orange text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition w-full">Add To Cart</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our p5.png" alt="Watermelon" class="w-32 h-32 object-cover rounded-full mb-4">
+                <h3 class="text-lg font-bold">Fresh Watermelon</h3>
+                <p class="text-brand-green font-bold my-2">$4.99 <span class="text-gray-400 line-through text-sm">$10.99</span></p>
+                <div class="text-brand-orange text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition w-full">Add To Cart</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our p6.png" alt="Brinjal" class="w-32 h-32 object-cover rounded-full mb-4">
+                <h3 class="text-lg font-bold">Fresh Brinjal</h3>
+                <p class="text-brand-green font-bold my-2">$4.99 <span class="text-gray-400 line-through text-sm">$10.99</span></p>
+                <div class="text-brand-orange text-sm mb-4"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition w-full">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-dark-bg text-center">
+        <h2 class="text-3xl font-bold text-brand-green mb-10">
+            Our <span class="bg-brand-orange text-white px-8 py-2 inline-block ribbon ml-2">Categories</span>
+        </h2>
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our c1.png" alt="Vegetables" class="w-40 h-40 object-cover mb-4">
+                <h3 class="text-xl font-bold mb-1">Fresh Vegetables</h3>
+                <p class="text-gray-500 mb-4 text-sm">Upto 45% off</p>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition">Shop Now</button>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our c2.png" alt="Dairy" class="w-40 h-40 object-cover mb-4">
+                <h3 class="text-xl font-bold mb-1">Dairy Products</h3>
+                <p class="text-gray-500 mb-4 text-sm">Upto 45% off</p>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition">Shop Now</button>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200 flex flex-col items-center">
+                <img src="./Assets/Images/our c3.png" alt="Fruits" class="w-40 h-40 object-cover mb-4">
+                <h3 class="text-xl font-bold mb-1">Fresh Fruits</h3>
+                <p class="text-gray-500 mb-4 text-sm">Upto 45% off</p>
+                <button class="border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-dark-bg text-center">
+        <h2 class="text-3xl font-bold text-brand-green mb-10">
+            Customer's <span class="bg-brand-orange text-white px-8 py-2 inline-block ribbon ml-2">Review</span>
+        </h2>
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/cr1.jpg" alt="User" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi voluptas tempore dolorem ratione, odit sequi laborum."</p>
+                <h4 class="font-bold text-lg">John Deo</h4>
+                <div class="text-brand-orange text-sm mt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/cr2.jpg" alt="User" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi voluptas tempore dolorem ratione, odit sequi laborum."</p>
+                <h4 class="font-bold text-lg">John Deo</h4>
+                <div class="text-brand-orange text-sm mt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-lg outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/cr3.jpg" alt="User" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi voluptas tempore dolorem ratione, odit sequi laborum."</p>
+                <h4 class="font-bold text-lg">John Deo</h4>
+                <div class="text-brand-orange text-sm mt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-dark-bg text-center">
+        <h2 class="text-3xl font-bold text-brand-green mb-10">
+            Our <span class="bg-brand-orange text-white px-8 py-2 inline-block ribbon ml-2">Blog</span>
+        </h2>
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/ob1.jpg" alt="Blog Post" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center text-gray-500 text-sm mb-3 space-x-4">
+                        <span><i class="fa-solid fa-user text-brand-orange mr-1"></i> By Admin</span>
+                        <span><i class="fa-solid fa-calendar text-brand-orange mr-1"></i> 1st May, 2021</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fresh And Organic Vegetables And Fruits</h3>
+                    <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="inline-block border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition">Read More</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/ob2.jpg" alt="Blog Post" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center text-gray-500 text-sm mb-3 space-x-4">
+                        <span><i class="fa-solid fa-user text-brand-orange mr-1"></i> By Admin</span>
+                        <span><i class="fa-solid fa-calendar text-brand-orange mr-1"></i> 1st May, 2021</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fresh And Organic Vegetables And Fruits</h3>
+                    <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="inline-block border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition">Read More</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden outline outline-1 outline-gray-200">
+                <img src="./Assets/Images/ob3.jpg" alt="Blog Post" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center text-gray-500 text-sm mb-3 space-x-4">
+                        <span><i class="fa-solid fa-user text-brand-orange mr-1"></i> By Admin</span>
+                        <span><i class="fa-solid fa-calendar text-brand-orange mr-1"></i> 1st May, 2021</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fresh And Organic Vegetables And Fruits</h3>
+                    <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="inline-block border-2 border-brand-green text-brand-green px-6 py-2 rounded hover:bg-brand-green hover:text-white transition">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="bg-brand-orange/15 text-gray-800 py-12 border-t border-brand-orange/20">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="#" class="text-2xl font-bold flex items-center gap-2 mb-4 text-brand-green">
+                    <i class="fa-solid fa-basket-shopping"></i> 
+                    Groco
+                </a>
+                <p class="text-gray-700 text-sm mb-6 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi eum magnam, ullam perspiciatis repellendus.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Contact Info</h3>
+                <ul class="space-y-3 text-gray-700 text-sm">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +123-456-7890</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +111-222-3333</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-brand-orange"></i> info@groco.com</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-brand-orange"></i> Mumbai, India - 400104</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Quick Links</h3>
+                <ul class="space-y-2 text-gray-700 text-sm">
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Home</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Features</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Products</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Categories</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Review</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Blogs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Newsletter</h3>
+                <p class="text-gray-700 text-sm mb-4">Subscribe for latest updates</p>
+                <form action="#" class="flex flex-col gap-3">
+                    <input type="email" placeholder="Your Email" class="px-4 py-2 bg-white border border-gray-300 rounded text-gray-800 focus:outline-none focus:border-brand-orange transition">
+                    <button type="submit" class="bg-brand-green text-white px-4 py-2 rounded hover:bg-brand-orange transition w-full sm:w-auto self-start shadow-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

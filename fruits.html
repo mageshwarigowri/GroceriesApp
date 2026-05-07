@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groco - Categories</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#2E7D32',
+                        'brand-orange': '#FE5303',
+                        'bg-light': '#FEF6F1',
+                        'bg-header': '#F9EBE4',
+                        'bg-sidebar': '#FBF6F3'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+        
+        // Simple function to toggle the category menu
+        function toggleCategories() {
+            const menu = document.getElementById('categoryList');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-bg-light text-gray-800 antialiased overflow-x-hidden min-h-screen flex flex-col">
+
+    <header class="bg-brand-orange/15 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center gap-2 text-brand-green">
+                <i class="fa-solid fa-basket-shopping"></i> 
+                Groco
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-brand-orange transition">Home</a>
+                <a href="about.html" class="font-medium hover:text-brand-orange transition">About Us</a>
+                <a href="categories.html" class="font-medium text-brand-orange">Categories</a>
+                <a href="contact.html" class="font-medium hover:text-brand-orange transition">Contact</a>
+            </nav>
+            <div class="flex space-x-4">
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </button>
+                <a href="login.html"><button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-user"></i>
+                </button></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-1 container mx-auto px-4 mt-8 gap-8">
+        
+        <aside class="w-64 flex-shrink-0">
+            <div class="bg-white border-r border-t border-b border-gray-200 h-full min-h-[600px]">
+                <div class="p-6 flex flex-col items-center">
+                    <button onclick="toggleCategories()" class="text-2xl font-bold text-brand-green flex flex-col items-center gap-2 focus:outline-none hover:opacity-80 transition w-full">
+                        Categories
+                        <i class="fa-solid fa-caret-down text-sm"></i>
+                    </button>
+                    
+                    <ul id="categoryList" class="hidden w-full mt-6 space-y-4 text-center">
+                        <li><a href="vegetables.html" class="block text-gray-700 hover:text-brand-orange hover:font-semibold transition pb-2 border-b border-gray-100">Vegetables</a></li>
+                        <li><a href="fruits.html" class="block text-gray-700 hover:text-brand-orange hover:font-semibold transition pb-2 border-b border-gray-100">Fruits</a></li>
+                        <li><a href="dairy.html" class="block text-gray-700 hover:text-brand-orange hover:font-semibold transition pb-2 border-b border-gray-100">Dairy Products</a></li>
+                        <li><a href="meats.html" class="block text-gray-700 hover:text-brand-orange hover:font-semibold transition">Fresh Meats</a></li>
+                    </ul>
+                </div>
+                <div class="bg-bg-sidebar h-full w-full"></div>
+            </div>
+        </aside>
+
+        <main class="flex-1 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
+                
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/milk.png" alt="Milk" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Milk</h3>
+                            <p class="text-gray-500 text-xs">Avain milk</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/fresh orange.png" alt="Orange" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Orange</h3>
+                            <p class="text-gray-500 text-xs">Fresh orange</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/garlic.png" alt="Garlic" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Garlic</h3>
+                            <p class="text-gray-500 text-xs">Fresh garlic</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/fresh meat.png" alt="Meat" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Meat</h3>
+                            <p class="text-gray-500 text-xs">Fresh meat</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/fresh potato.png" alt="Potatoes" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Potato</h3>
+                            <p class="text-gray-500 text-xs">Fresh potato</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/our p5.png" alt="Watermelon" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Watermelon</h3>
+                            <p class="text-gray-500 text-xs">Fresh watermelon</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/fresh carrot.png" alt="Carrots" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Carrot</h3>
+                            <p class="text-gray-500 text-xs">Fresh carrot</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/cheese.png" alt="Cheese" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm"> Cheese</h3>
+                            <p class="text-gray-500 text-xs"> cheese</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col pt-4">
+                    <button class="absolute top-0 right-4 text-red-500 hover:scale-110 transition"><i class="fa-solid fa-heart"></i></button>
+                    <img src="./Assets/Images/fresh chicken.png" alt="Chicken" class="w-28 h-28 object-contain mx-auto mb-4">
+                    <div class="flex justify-between items-end px-2">
+                        <div>
+                            <p class="text-brand-green font-bold mb-1">$8.99</p>
+                            <h3 class="text-gray-800 font-semibold text-sm">Fresh Chicken</h3>
+                            <p class="text-gray-500 text-xs">Fresh chicken</p>
+                        </div>
+                        <a href="cart.html"><button class="bg-brand-orange text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-orange-600 transition shadow-sm">Buy Now</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-16 text-center">
+                <button class="inline-flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-700 px-8 py-2 rounded-md transition shadow-sm">
+                    <i class="fa-solid fa-arrow-left-long text-sm"></i> Back
+                </button>
+            </div>
+            
+        </main>
+    </div>
+
+    
+    <footer class="bg-brand-orange/15 text-gray-800 py-12 border-t border-brand-orange/20">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="#" class="text-2xl font-bold flex items-center gap-2 mb-4 text-brand-green">
+                    <i class="fa-solid fa-basket-shopping"></i> 
+                    Groco
+                </a>
+                <p class="text-gray-700 text-sm mb-6 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi eum magnam, ullam perspiciatis repellendus.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Contact Info</h3>
+                <ul class="space-y-3 text-gray-700 text-sm">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +123-456-7890</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +111-222-3333</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-brand-orange"></i> info@groco.com</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-brand-orange"></i> Mumbai, India - 400104</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Quick Links</h3>
+                <ul class="space-y-2 text-gray-700 text-sm">
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Home</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Features</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Products</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Categories</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Review</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Blogs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Newsletter</h3>
+                <p class="text-gray-700 text-sm mb-4">Subscribe for latest updates</p>
+                <form action="#" class="flex flex-col gap-3">
+                    <input type="email" placeholder="Your Email" class="px-4 py-2 bg-white border border-gray-300 rounded text-gray-800 focus:outline-none focus:border-brand-orange transition">
+                    <button type="submit" class="bg-brand-green text-white px-4 py-2 rounded hover:bg-brand-orange transition w-full sm:w-auto self-start shadow-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

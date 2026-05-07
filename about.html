@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groco - Organic Food Store</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#2E7D32',
+                        'brand-orange': '#FE5303'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        /* Custom Ribbon Shape for Headings */
+        .ribbon {
+            clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-gray-800 antialiased overflow-x-hidden">
+
+    <header class="bg-brand-orange/15 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center gap-2 text-brand-green">
+                <i class="fa-solid fa-basket-shopping"></i> 
+                Groco
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-brand-orange transition">Home</a>
+                <a href="about.html" class="font-medium text-brand-orange">About Us</a>
+                <a href="categories.html" class="font-medium hover:text-brand-orange transition">Categories</a>
+                <a href="contact.html" class="font-medium hover:text-brand-orange transition">Contact</a>
+                <a href="vegetables.html" class="font-medium hover:text-brand-orange transition">Vegetables</a>
+            </nav>
+            <div class="flex space-x-4">
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </button>
+                <a href="login.html"><button class="text-gray-700 hover:text-brand-orange transition">
+                    <i class="fa-solid fa-user"></i>
+                </button></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-[#FFF7F4] font-poppins flex flex-col items-center justify-center">
+    
+    <h2 class="text-3xl font-bold text-center text-[#2E7D32] mb-12">About Us</h2>
+    
+    <img src="./Assets/Images/aboutusimage.jpg" alt="About Us" class="mb-8 w-auto h-auto max-w-xl (576px) rounded-lg">
+
+    <div class="p-8 md:p-12 max-w-lg w-full mx-auto bg-[#FFF7F4] shadow-sm text-[#2E7D32] space-y-6 leading-relaxed">
+        <p>
+            We are a modern fashion brand focused on creating stylish, comfortable, and high-quality clothing for everyday life. Our goal is to offer designs that are both trendy and timeless, giving customers confidence in every outfit they wear.
+        </p>
+        <p>
+            We believe in using good materials, sustainable practices, and thoughtful craftsmanship. Every piece we create is made with attention to detail and a passion for fashion.
+        </p>
+        <p>
+            Our team brings together creativity, experience, and fresh ideas to deliver the best for our customers. We’re committed to offering a smooth shopping experience and products that inspire your personal style.
+        </p>
+        <p>
+            Thank you for being a part of our journey. Together, we continue to shape a better and more stylish future.
+        </p>
+    </div>
+
+</section>
+    
+    <footer class="bg-brand-orange/15 text-gray-800 py-12 border-t border-brand-orange/20">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="#" class="text-2xl font-bold flex items-center gap-2 mb-4 text-brand-green">
+                    <i class="fa-solid fa-basket-shopping"></i> 
+                    Groco
+                </a>
+                <p class="text-gray-700 text-sm mb-6 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi eum magnam, ullam perspiciatis repellendus.</p>
+                <div class="flex space-x-3">
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center hover:bg-brand-orange transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Contact Info</h3>
+                <ul class="space-y-3 text-gray-700 text-sm">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +123-456-7890</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-orange"></i> +111-222-3333</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-brand-orange"></i> info@groco.com</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-brand-orange"></i> Mumbai, India - 400104</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Quick Links</h3>
+                <ul class="space-y-2 text-gray-700 text-sm">
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Home</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Features</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Products</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Categories</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Review</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition flex items-center gap-2"><i class="fa-solid fa-arrow-right text-brand-green text-xs"></i> Blogs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-brand-green">Newsletter</h3>
+                <p class="text-gray-700 text-sm mb-4">Subscribe for latest updates</p>
+                <form action="#" class="flex flex-col gap-3">
+                    <input type="email" placeholder="Your Email" class="px-4 py-2 bg-white border border-gray-300 rounded text-gray-800 focus:outline-none focus:border-brand-orange transition">
+                    <button type="submit" class="bg-brand-green text-white px-4 py-2 rounded hover:bg-brand-orange transition w-full sm:w-auto self-start shadow-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
